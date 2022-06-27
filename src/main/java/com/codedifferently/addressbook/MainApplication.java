@@ -14,10 +14,12 @@ public class MainApplication {
 
     public MainApplication(){
         users = new TreeMap<>();
+        currentUser = null;
     }
 
     public MainApplication(Map<String, User> users){
         this.users = users;
+        this.currentUser =null;
     }
 
     public User signUp(String firstName, String lastname, String email, String password) throws UserExistException {
